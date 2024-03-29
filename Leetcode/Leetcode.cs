@@ -19,6 +19,12 @@
 					solution2.AddTwoNumbers(solution2.Param2_1, solution2.Param2_2);
 					solution2.AddTwoNumbers(solution2.Param3_1, solution2.Param3_2);
 					break;
+				case 3:
+					Solutions._3.Solution solution3 = new();
+					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param1)}");
+					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param2)}");
+					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param3)}");
+					break;
 				default:
 					Console.WriteLine($"Question with number = {questionNumber} not found.");
 					break;
