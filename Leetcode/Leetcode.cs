@@ -25,6 +25,11 @@
 					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param2)}");
 					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param3)}");
 					break;
+				case 4:
+					Solutions._4.Solution solution4 = new();
+					Console.WriteLine($"Output: {solution4.FindMedianSortedArrays(solution4.Param1_1, solution4.Param1_2)}");
+					Console.WriteLine($"Output: {solution4.FindMedianSortedArrays(solution4.Param2_1, solution4.Param2_2)}");
+					break;
 				default:
 					Console.WriteLine($"Question with number = {questionNumber} not found.");
 					break;
