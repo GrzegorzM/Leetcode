@@ -30,6 +30,11 @@
 					Console.WriteLine($"Output: {solution4.FindMedianSortedArrays(solution4.Param1_1, solution4.Param1_2)}");
 					Console.WriteLine($"Output: {solution4.FindMedianSortedArrays(solution4.Param2_1, solution4.Param2_2)}");
 					break;
+				case 5:
+					Solutions._5.Solution solution5 = new();
+					Console.WriteLine($"Output: {solution5.LongestPalindrome(solution5.Param1)}");
+					Console.WriteLine($"Output: {solution5.LongestPalindrome(solution5.Param2)}");
+					break;
 				default:
 					Console.WriteLine($"Question with number = {questionNumber} not found.");
 					break;
