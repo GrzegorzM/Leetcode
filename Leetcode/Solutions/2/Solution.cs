@@ -6,7 +6,7 @@ namespace Leetcode.Solutions._2
 	{
 		private ListNode result;
 
-		public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+		public virtual ListNode AddTwoNumbers(ListNode l1, ListNode l2)
 		{
 			string firstNumber = GetNumber(l1);
 			string secondNumber = GetNumber(l2);

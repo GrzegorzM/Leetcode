@@ -15,10 +15,16 @@
 					break;
 				case 2:
 					Solutions._2.Solution solution2 = new();
+					Solutions._2.AlgorithmSolution algorithmSolution2 = new();
 					solution2.AddTwoNumbers(solution2.Param1_1, solution2.Param1_2);
 					solution2.AddTwoNumbers(solution2.Param2_1, solution2.Param2_2);
 					solution2.AddTwoNumbers(solution2.Param3_1, solution2.Param3_2);
 					solution2.AddTwoNumbers(solution2.Param4_1, solution2.Param4_2);
+
+					algorithmSolution2.AddTwoNumbers(solution2.Param1_1, solution2.Param1_2);
+					algorithmSolution2.AddTwoNumbers(solution2.Param2_1, solution2.Param2_2);
+					algorithmSolution2.AddTwoNumbers(solution2.Param3_1, solution2.Param3_2);
+					algorithmSolution2.AddTwoNumbers(solution2.Param4_1, solution2.Param4_2);
 					break;
 				case 3:
 					Solutions._3.Solution solution3 = new();
@@ -40,6 +46,12 @@
 					Solutions._6.Solution solution6 = new();
 					Console.WriteLine($"Output: {solution6.Convert(solution6.Param1_1, solution6.Param1_2)}");
 					Console.WriteLine($"Output: {solution6.Convert(solution6.Param2_1, solution6.Param2_2)}");
+					break;
+				case 7:
+					Solutions._7.Solution solution7 = new();
+					Console.WriteLine($"Output: {solution7.Reverse(solution7.Param1)}");
+					Console.WriteLine($"Output: {solution7.Reverse(solution7.Param2)}");
+					Console.WriteLine($"Output: {solution7.Reverse(solution7.Param3)}");
 					break;
 				default:
 					Console.WriteLine($"Question with number = {questionNumber} not found.");
