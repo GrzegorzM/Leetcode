@@ -31,6 +31,13 @@
 					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param1)}");
 					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param2)}");
 					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param3)}");
+					Console.WriteLine($"Output: {solution3.LengthOfLongestSubstring(solution3.Param4)}");
+
+					Solutions._3.AlgorithmSolution algorithmSolution3 = new();
+					Console.WriteLine($"Output: {algorithmSolution3.LengthOfLongestSubstring(solution3.Param1)}");
+					Console.WriteLine($"Output: {algorithmSolution3.LengthOfLongestSubstring(solution3.Param2)}");
+					Console.WriteLine($"Output: {algorithmSolution3.LengthOfLongestSubstring(solution3.Param3)}");
+					Console.WriteLine($"Output: {algorithmSolution3.LengthOfLongestSubstring(solution3.Param4)}");
 					break;
 				case 4:
 					Solutions._4.Solution solution4 = new();
@@ -52,6 +59,12 @@
 					Console.WriteLine($"Output: {solution7.Reverse(solution7.Param1)}");
 					Console.WriteLine($"Output: {solution7.Reverse(solution7.Param2)}");
 					Console.WriteLine($"Output: {solution7.Reverse(solution7.Param3)}");
+					break;
+				case 8:
+					Solutions._8.Solution solution8 = new();
+					Console.WriteLine($"Output: {solution8.MyAtoi(solution8.Param1)}");
+					Console.WriteLine($"Output: {solution8.MyAtoi(solution8.Param2)}");
+					Console.WriteLine($"Output: {solution8.MyAtoi(solution8.Param3)}");
 					break;
 				default:
 					Console.WriteLine($"Question with number = {questionNumber} not found.");
