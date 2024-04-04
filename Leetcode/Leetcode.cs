@@ -72,6 +72,12 @@
 					Console.WriteLine($"Output: {solution9.IsPalindrome(solution9.Param2)}");
 					Console.WriteLine($"Output: {solution9.IsPalindrome(solution9.Param3)}");
 					break;
+				case 10:
+					Solutions.p10.Solution solution10 = new();
+					Console.WriteLine($"Output: {solution10.IsMatch(solution10.Param1_1, solution10.Param1_2)}");
+					Console.WriteLine($"Output: {solution10.IsMatch(solution10.Param2_1, solution10.Param2_2)}");
+					Console.WriteLine($"Output: {solution10.IsMatch(solution10.Param3_1, solution10.Param3_2)}");
+					break;
 				default:
 					Console.WriteLine($"Question with number = {questionNumber} not found.");
 					break;
