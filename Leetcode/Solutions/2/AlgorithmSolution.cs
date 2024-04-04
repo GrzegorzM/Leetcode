@@ -39,8 +39,12 @@
 			int carry = sum / 10;
 
 			ListNode resultHead = result;
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
 			l1 = l1.next; // Slower - Converting null literal or possible null value to non-nullable type.
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
 			l2 = l2.next;
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
 			while (l1 != null || l2 != null || carry != 0)
 			{
@@ -52,8 +56,12 @@
 				resultHead.next = new ListNode(sum % 10);
 
 				resultHead = resultHead.next;
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
 				l1 = l1?.next;
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
 				l2 = l2?.next;
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 			}
 
 			return result;

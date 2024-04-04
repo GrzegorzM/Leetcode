@@ -4,7 +4,27 @@
 	{
 		public double FindMedianSortedArrays(int[] nums1, int[] nums2)
 		{
-			return 0;
+			// Slower
+			//List<int> concatenatedArrays = nums1.Concat(nums2)
+			//	.OrderBy(x => x)
+			//	.ToList();
+
+			// Faster
+			int[] concatenatedArrays = nums1.Concat(nums2)
+					//.OrderBy(x => x)
+					.ToArray();
+
+			Array.Sort(concatenatedArrays);
+
+			int mergedArrayLength = concatenatedArrays.Length;
+			if (mergedArrayLength % 2 == 0)
+			{
+				return (double)(concatenatedArrays[(mergedArrayLength / 2) - 1] + concatenatedArrays[mergedArrayLength / 2]) / 2;
+			}
+			else
+			{
+				return concatenatedArrays[mergedArrayLength / 2];
+			}
 		}
 
 		#region Param 1

@@ -4,7 +4,9 @@ namespace Leetcode.Solutions._2
 {
 	internal class Solution
 	{
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 		private ListNode result;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
 		public virtual ListNode AddTwoNumbers(ListNode l1, ListNode l2)
 		{

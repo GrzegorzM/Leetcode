@@ -66,6 +66,12 @@
 					Console.WriteLine($"Output: {solution8.MyAtoi(solution8.Param2)}");
 					Console.WriteLine($"Output: {solution8.MyAtoi(solution8.Param3)}");
 					break;
+				case 9:
+					Solutions._9.Solution solution9 = new();
+					Console.WriteLine($"Output: {solution9.IsPalindrome(solution9.Param1)}");
+					Console.WriteLine($"Output: {solution9.IsPalindrome(solution9.Param2)}");
+					Console.WriteLine($"Output: {solution9.IsPalindrome(solution9.Param3)}");
+					break;
 				default:
 					Console.WriteLine($"Question with number = {questionNumber} not found.");
 					break;
